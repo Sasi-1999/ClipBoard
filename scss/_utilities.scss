@@ -1,0 +1,73 @@
+.container {
+  max-width: $max-width;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.content-container {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: $Dark-Grayish-Blue;
+  line-height: 1;
+}
+
+.about {
+  font-size: 1rem;
+  color: $Grayish-Blue;
+  margin-bottom: 1.5rem;
+}
+
+.small-title {
+  font-size: 1.4rem;
+  color: $Dark-Grayish-Blue;
+  margin-bottom: 0.5rem;
+}
+
+.small-about {
+  font-size: 0.9rem;
+  color: $Grayish-Blue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Button
+%btn-shared {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    background: $Strong-Cyan;
+    color: #fff;
+    margin-right: 1rem;
+    box-shadow: 0 3px rgba(rgba(57, 134, 96, 0.753), 1);
+  }
+
+  &-secondary {
+    @extend %btn-shared;
+    background: $Light-Blue;
+    color: #fff;
+    box-shadow: 0 3px rgba(rgba(91, 95, 185, 0.884), 1);
+  }
+}
+
+button[class^="btn-"]:hover {
+  opacity: 0.8;
+}

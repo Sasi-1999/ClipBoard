@@ -1,0 +1,167 @@
+// Smaller screens
+@media (max-width: 1024px) {
+  .content-container {
+    max-width: 900px;
+  }
+
+  #section {
+    &-2 {
+      .section-container {
+        .img img {
+          max-width: 600px;
+        }
+      }
+    }
+
+    &-3 {
+      .section-container {
+        .img img {
+          max-width: 800px;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+// Tablets
+@media (max-width: 900px) {
+  #section-2 .section-container,
+  #section-4 .container .workflow-container,
+  #section-5 .container .companies {
+    grid-template-columns: 1fr;
+  }
+
+  .content-conatiner {
+    max-width: 600px;
+  }
+
+  #section {
+    &-2 {
+      .section-container {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .img img {
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        .content {
+          text-align: center;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &-3 {
+      .section-container {
+        .img img {
+          max-width: 500px;
+          transform: translateX(-20px);
+        }
+      }
+    }
+
+    &-5 {
+      .companies {
+        gap: 5rem;
+      }
+    }
+  }
+
+  #footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+      align-items: center;
+      text-align: center;
+
+      li {
+        margin-bottom: 1rem;
+      }
+
+      .logo {
+        justify-self: center;
+        margin-bottom: 2rem;
+      }
+
+      .socials {
+        justify-self: center;
+        margin-top: 1rem;
+      }
+
+      .socials i {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  .content-conatiner {
+    max-width: 300px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #section {
+    &-2 {
+      .section-container {
+        max-width: 300px;
+
+        .img img {
+          max-width: 300px;
+        }
+      }
+    }
+
+    &-3 {
+      .section-container {
+        .img img {
+          max-width: 300px;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+// SMaller Smartphones
+@media (max-width: 320px) {
+  .content-conatiner {
+    max-width: 275px;
+  }
+
+  #section {
+    &-2 {
+      .section-container {
+        max-width: 250px;
+        .img img {
+          max-width: 250px;
+        }
+      }
+    }
+
+    &-3 {
+      .section-container {
+        .img img {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  #footer {
+    .footer-container {
+      .socials i {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

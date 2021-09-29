@@ -1,0 +1,201 @@
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  background: #fff;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// Header
+#header {
+  background: url("../images/bg-header-desktop.png") no-repeat center
+    center/cover;
+
+  .header-container {
+    padding-top: 6rem;
+
+    .logo {
+      width: 100px;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Section
+#section {
+  // Section-1
+  &-1 {
+    .section-container {
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  // Section-2
+  &-2 {
+    .section-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      .img img {
+        max-width: 775px;
+        margin-left: -25px;
+        margin-right: 6rem;
+      }
+
+      .content {
+        max-width: 300px;
+      }
+
+      h3 {
+        margin-top: 1rem;
+      }
+
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  // Section-3
+  &-3 {
+    .section-container {
+      padding-top: 6rem;
+      .img img {
+        max-width: 875px;
+        margin-top: 4rem;
+        transform: translateX(-100px);
+      }
+    }
+  }
+
+  // Section-4
+  &-4 {
+    .container {
+      padding-top: 3rem;
+
+      .workflow-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        margin-top: 4rem;
+        align-items: center;
+
+        img {
+          margin-bottom: 2rem;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  // section-5
+  &-5 {
+    .container {
+      padding: 8rem 0;
+
+      .companies {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+      }
+
+      .companies img {
+        justify-self: center;
+      }
+    }
+  }
+
+  // Section-6
+  &-6 {
+    padding-bottom: 6rem;
+  }
+}
+
+// Footer
+#footer {
+  background: rgb(247, 247, 247);
+  padding: 2rem 0;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 4fr;
+    align-items: center;
+    font-size: 0.9rem;
+
+    img {
+      width: 50px;
+    }
+
+    i {
+      width: 25px;
+      color: $Dark-Grayish-Blue;
+      margin-left: 1.5rem;
+    }
+
+    i:hover {
+      color: $Strong-Cyan;
+      cursor: pointer;
+    }
+
+    li {
+      color: $Dark-Grayish-Blue;
+    }
+
+    li:first-child {
+      margin-bottom: 1rem;
+    }
+
+    li:hover {
+      color: $Strong-Cyan;
+      cursor: pointer;
+    }
+
+    .socials {
+      justify-self: end;
+    }
+
+    .info {
+      justify-self: center;
+    }
+
+    .info-3 {
+      align-self: flex-start;
+    }
+
+    .logo {
+      justify-self: start;
+    }
+  }
+}
+
+@import "media";
